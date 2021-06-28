@@ -1,0 +1,219 @@
+/* Globals */
+:root {
+    --verde-primario: #63a537;
+    --verde-hover: #528a2d;
+    --verde-shadow: #c1d8b2;
+    --verde-oscuro: #4f7733;
+    --verde-bg-col: #eef6dd;
+    --gris-principal: #fff;
+    --font-code: 'Fira Code', monospace;
+    --font-roboto: 'Roboto', sans-serif;    
+}
+
+li a {
+    text-decoration: none;
+    color: var(--verde-primario);    
+}
+
+li a:hover {
+    color: var(--verde-oscuro);
+}
+
+
+/* Aside */
+.datos-personales,
+.principal,
+.seccion {    
+    font-family: var(--font-code);
+    color: var(--verde-primario);        
+}
+
+.datos-personales {
+    background-color: var(--verde-bg-col);
+    position: relative;
+    z-index: 0; 
+    font-size: 0.9rem;  
+}
+
+.upper-triangle {
+    border-left: 11.2rem solid var(--gris-principal);
+    border-right: 11.2rem solid transparent;
+    border-top: 11.2rem solid var(--gris-principal);
+    border-bottom: 11.2rem solid transparent;        
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    margin-left: -25px;
+}
+
+.principal {
+    background-color: var(--gris-principal);
+    padding-left: 3rem;
+}
+
+.foto {
+    max-height: 20rem;
+    border: 5px solid var(--verde-primario);    
+}
+
+#nombre {    
+    font-weight: 600;
+    font-size: 4rem; 
+    line-height: 3.8rem;     
+}
+
+#nombre::after {
+    content: '';
+    display: block;       
+    color: var(--verde-oscuro);        
+    margin-right: 2rem;  
+    border-bottom: 5px solid var(--verde-oscuro);        
+}
+
+span.first-letter {
+    font-size: 110%;
+}
+
+#titulo {    
+    font-size: 2rem;
+    text-shadow: 3px 3px 4px var(--verde-shadow);
+    font-family: var(--font-code);
+    color: var(--verde-primario);
+}
+
+#perfil .card, 
+#perfil .card-header {
+    background-color: var(--verde-bg-col);
+    border: none;
+}
+
+h3 .btn-link {
+    text-decoration: none;
+    padding: 0;
+}
+
+h3 .btn-link:hover {
+    box-shadow: none !important;
+}
+
+h3 .btn-link:focus {
+    box-shadow: none !important;
+}
+
+#perfil .card-body {
+    padding-top: 0;
+}
+
+#perfil .subtitulo {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--verde-oscuro);
+}
+
+#perfil .subtitulo::after {
+    content: '';
+    display: block;    
+    width: 130px;
+    color: var(--verde-oscuro);    
+    padding: 0 0 0.1rem 1.5rem;    
+    margin-right: 2rem;  
+    border-bottom: 3px dotted var(--verde-oscuro);        
+}
+
+#perfil .datos-contacto {      
+    color: var(--verde-oscuro);    
+}
+
+#perfil li a:hover {
+    color: var(--verde-primario) !important;
+    font-weight: 700;
+}
+
+/* Progress bar */
+
+/*.skill {
+    position: relative;
+}*/
+
+p.skill:hover {
+    font-weight: 700 !important;
+}
+
+/*.stars {
+    position: absolute;
+    left: 15.5rem;
+}*/
+
+.star {
+    font-size: 0.8rem; 
+    display: inline-block;
+    width: 0.6rem;     
+}
+
+.project-icon {
+    font-size: 1.15rem;
+}
+
+.proyectos .li-project {
+    margin-bottom: 0.20rem;
+}
+
+/*******************/
+/* Columna Derecha */
+/*******************/
+
+/* Work Experience */
+.seccion {
+    background-color: var(--verde-oscuro);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 2.7rem;
+    text-shadow: 1px 1px 2px #bbb;
+    border-radius: 0 40px 40px 0;
+}
+
+.work-experience-details li {
+    line-height: 1.4rem;
+    padding-right: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.muted  {
+    font-family: var(--font-code);
+    color: var(--verde-primario);
+    font-size: 0.8rem; 
+    font-stretch: narrower;
+}
+
+li span.org-name {    
+    font-style: italic;
+}
+
+/* Education */
+.centrar-vineta {
+    position: relative;
+}
+
+.vineta {
+    position: absolute;
+    top: 1rem;
+    left: -0.125rem;
+}
+
+.site {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+.year {
+    font-size: 0.7rem;    
+}
+
+.note-muted  {    
+    font-size: 0.9rem; 
+    font-stretch: narrower;
+    font-weight: 400;
+}

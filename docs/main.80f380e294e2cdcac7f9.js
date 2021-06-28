@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(e){console.log("Creando elemento H1");var n=document.createElement("h1");n.innerText="Hola ".concat(e," !!!"),document.body.append(n)}("Bernard")})();
