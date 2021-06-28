@@ -1,19 +1,19 @@
-# Webpack starter
-
-Este es el template para crear proyectos JS usando webpack
-
+# Webpack 
+CV Bernard Armando Morales Nicola
+Project with webpack
 <br/>
 
 ### Notas:
-Recrear node_modules:
+Recreate node_modules:
 
 ```
 npm install
 ```
 
-Y recrear el directorio dist
-con:
+And recreate Dist directory with:
 
 ```
-npm run build
+npm run build or npm run build:dev (Development)
 ```
+
+Reload live with npm start
