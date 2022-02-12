@@ -4,6 +4,8 @@ export const init = () => {
 		
 		perfilToggle();
 
+		downloadButtomToggle();
+
 		$('#aboutme').click(function () {
 			$('#toggle-icon-aboutme').toggleClass("fa-chevron-down").toggleClass("fa-chevron-up");
 		});
@@ -55,5 +57,16 @@ export const init = () => {
 			$(".toggle-icon").addClass("fa-chevron-down");    
 			$(".toggle-icon").removeClass("fa-chevron-up");    
 		}
-	}   
+	}  
+	
+	function downloadButtomToggle() {
+
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 0) {
+				$('.float').fadeOut();
+			} else {
+				$('.float').fadeIn();
+			}
+		});
+	}
 }

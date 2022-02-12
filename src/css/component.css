@@ -190,6 +190,7 @@ p.skill:hover {
 
 li span.org-name {    
     font-style: italic;
+    /* font-weight: 500; */
 }
 
 /* Education */
@@ -216,4 +217,31 @@ li span.org-name {
     font-size: 0.9rem; 
     font-stretch: narrower;
     font-weight: 400;
+}
+
+/* Floating button */
+.float {
+    position: fixed;
+    background-color: rgba(99,165,55, 0.7);
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 0.5rem;
+    left: 0.5rem;    
+    z-index: 2;    
+}
+
+.float:hover {
+    background-color: rgba(99,165,55, 0.9);
+    color: #fff;
+}
+
+.float-icon {
+    display: inline-block;
+    vertical-align: text-top;   
+    margin: -1% auto auto 0;        
 }
