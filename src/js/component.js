@@ -63,9 +63,9 @@ export const init = () => {
 
 		$(window).scroll(function() {
 			if ($(this).scrollTop() > 0) {
-				$('.float').fadeOut();
+				$('.float-button').fadeOut();
 			} else {
-				$('.float').fadeIn();
+				$('.float-button').fadeIn();
 			}
 		});
 	}
